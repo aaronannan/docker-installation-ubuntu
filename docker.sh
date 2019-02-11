@@ -1,6 +1,6 @@
 !#/bin/bash
 
-sudo apt-get remove docker docker-engine docker.io
+sudo apt-get remove -y docker docker-engine docker.io
 
 sudo apt-get update
 
@@ -24,3 +24,9 @@ sudo apt-get update
 sudo apt-get install -y docker-ce
 
 sudo docker run hello-world
+
+sudo apt-get install -y python-pip
+
+pip install --upgrade pip
+
+pip install awscli
